@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Job Application Form</title>
+        <link rel = "icon" href = "https://iconarchive.com/download/i89674/alecive/flatwoken/Apps-Google-Drive-Forms.ico" type = "image/x-icon">
+        <CENTER>
+            <img src = "https://www.employmenthelp.org/wp-content/uploads/Job-Board-Header-Background.png" widht = 3000 height = 250>
+            <font size="4" color="LightBlue">
+            <h1>Application for Job</h1></font>
+            <p>Please fill the folowing details very carefully. On the basis of your answers, your will be recruited.<br> <br><b>* fields are mandatory</b></p>
+        </CENTER>  
+    </head>
+
+    <body>
+         <form>
+            <TABLE ALIGN="CENTER" CELLPADDING="5" CELLSPACING="1" WIDTH="800" BGCOLOR="LightBlue">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 1. </td>
+                    <td> <b>Enter your Name</b> <FONT style= "COLOR:RED";><b>*</b></FONT></td>
+                    <td>&nbsp;</td>
+                    <td> <INPUT TYPE="TEXT" NAME="S_NAME" SIZE="50" MAXLENGTH="30" VALUE="" Align = "Left" required></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 2. </td>
+                    <TD> <b>Enter your Roll Number</b></TD>
+                    <td>&nbsp;</td>
+                    <TD> <INPUT TYPE="NUMBER" NAME="S_ROLL" SIZE="15" MAXLENGTH="10" VALUE="" border=""></TD>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 3. </td>
+                    <TD> <b>Enter your Email</b> <FONT style= "COLOR:RED";><b>*</b></FONT></TD>
+                    <td>&nbsp;</td>
+                    <TD> <INPUT TYPE="email" NAME="S_PHONE" SIZE="50" MAXLENGTH="70" VALUE="" border="" required></TD>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 4. </td>
+                    <TD> <b>Enter your Phone Number</b></TD>
+                    <td>&nbsp;</td>
+                    <TD> <INPUT TYPE="NUMBER" NAME="S_PHONE" SIZE="20" MAXLENGTH="15" VALUE="" border=""></TD>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 5. </td>
+                    <TD> <b>Create your Password</b> <FONT style= "COLOR:RED";><b>*</b></FONT></TD>
+                    <td>&nbsp;</td>
+                    <TD><INPUT TYPE="PASSWORD" required></TD>     
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 6. </td>
+                    <TD> <b>Address</b></TD>
+                    <td>&nbsp;</td>
+                    <TD> <TEXTAREA ROWS="6" COL ="100"></TEXTAREA></TD>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 7. </td>
+                    <TD> <b>State</b></TD>
+                    <td>&nbsp;</td>
+                    <td><SELECT>
+                        <OPTION> SELECT
+                        <OPTION> HIMACHAL
+                        <OPTION> HARYANA
+                        <OPTION> DELHI
+                        <OPTION> UTTAR PRADESH
+                    </SELECT></td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 8. </td>
+                    <TD> <b>Year</b></TD>
+                    <td>&nbsp;</td>
+                    <TD> 
+                        <INPUT TYPE="RADIO" NAME="Year" VALUE="1st year" CHECKED>1st year<BR>
+                        <INPUT TYPE="RADIO" NAME="Year" VALUE="2nd year">2nd year<BR>
+                        <INPUT TYPE="RADIO" NAME="Year" VALUE="3rd year">3rd year<BR>
+                        <INPUT TYPE="RADIO" NAME="Year" VALUE="4th year">4th year
+                        </TD>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 9. </td>
+                    <TD> <b>Branch</b></TD>
+                    <td>&nbsp;</td>
+                    <TD> <INPUT TYPE="RADIO" NAME="BRANCH" VALUE="CSE" CHECKED>CSE<BR>
+                    <INPUT TYPE="RADIO" NAME="BRANCH" VALUE="IT">IT<BR>
+                    <INPUT TYPE="RADIO" NAME="BRANCH">ECE</TD>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 10. </td>
+                    <TD> <b>Skills</b></TD>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="checkbox" id="skill1" name="skill1" value="Web">
+                        <label for="vehicle1"> Web Development</label><br>
+                        <input type="checkbox" id="skill2" name="skill2" value="Graphic">
+                        <label for="vehicle2"> Graphic Designing</label><br>
+                        <input type="checkbox" id="skill3" name="skill3" value="Data Science">
+                        <label for="vehicle3"> Data Science</label><br>
+                        <input type="checkbox" id="skill4" name="skill4" value="ML">
+                        <label for="vehicle3"> Machine Learning</label><br>
+                        <input type="checkbox" id="skill5" name="skill5" value="DSA">
+                        <label for="vehicle3"> Data Structure and Algorithm</label><br>
+                        <input type="checkbox" id="skill6" name="skill6" value="Cloud">
+                        <label for="vehicle3"> Cloud Computing</label><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 11. </td>
+                    <TD> <b>Attach your Resume</b></TD>
+                    <td>&nbsp;</td>
+                    <td>
+                        <label for="myfile">Select a file:</label>
+                        <input type="file"  id="myfile" name="myfile">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td Align="Center" colspan="5" rowspan="1"> 
+                        <input type="submit" value="RESET" style= "Background-COLOR:rgb(89, 160, 241)";>
+                        <input type="submit" value="SUBMIT" style= "Background-COLOR:rgb(89, 160, 241)";>  
+                    </td>
+                </tr>
+                
+         </form>
+    </body>
+</html>
