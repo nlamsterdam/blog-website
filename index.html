@@ -1,26 +1,49 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title> Website having FRAMES</TITLE>
-    </head>
-
-    <frameset rows = "8%, 79%, *">
-        <frameset> 
-            <frame name="header" src="header.html" scrolling="off">
-        </frameset>
-
-        <frameset cols="15%,70%,10%" frameborder>
-            <frame name = "left" SRC="hyperlinks.html">
-            <frame name = "main" src = "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHdvcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" />
-            <frame name = "right" src = "ad.html" />
-        </frameset>
-        
-        <frameset> 
-            <frame name="footer" src="footer.html" scrolling="off">
-        </frameset>
-
-        <noframes>
-            <body>Your browser does not support frames.</body>
-        </noframes>
-    </frameset>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <style>
+      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #6e6e6e;background-color: #000;} #preview-frame {width: 100%;background-color: #fff;}</style>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         //function to fix height of iframe!
+         var calcHeight = function() {
+           //var headerDimensions = 0; //$('#header-bar').height();
+           $('#preview-frame').height($(window).height());
+         }
+         
+         $(document).ready(function() {
+           calcHeight();
+           /*$('#header-bar a.close').mouseover(function() {
+             $('#header-bar a.close').addClass('activated');
+           }).mouseout(function() {
+             $('#header-bar a.close').removeClass('activated');
+           });*/
+         }); 
+         
+         $(window).resize(function() {
+           calcHeight();
+         }).load(function() {
+           calcHeight();
+         });
+      </script>
+   </head>
+   <body>
+      <iframe id="preview-frame" src="http://nlamsterdam.maxhoving.com/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
+      </iframe>
+   </body>
 </html>
+@bferronato
+bferronato commented on 6 Nov 2020
+<title>Test Layout</title> <style type="text/css"> body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        #content
+        {
+            position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <iframe width="100%" height="100%" frameborder="0" src="http://nlamsterdam.maxhoving.com/" />
+    </div>
+</body>
